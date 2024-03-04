@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node3-pratico-api-solid-pg-1:
+    image: bitnami/postgresql
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=apipet
